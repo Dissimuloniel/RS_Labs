@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+</head>
+<body>
+    <ul id="messages"></ul>
+    <input id="messageInput" placeholder="Введите сообщение" />
+    <button onclick="sendMessage()">Send</button>
+    <script>
+        var socket = io('http://localhost:5000');
+        socket.on('message', function (data) {
+            var messages = document.getElementById('messages');
+            var item = document.createElement('li');
+            item.textContent = data;
+            messages.appendChild(item);
+        });
+        function sendMessage() {
+            var messageInput = document.getElementById('messageInput');
+            var message = messageInput.value;
+
+            socket.emit('message', message);
+            var messages = document.getElementById('messages');
+            var item = document.createElement('li');
+            item.textContent = 'Ты: ' + message;
+            messages.appendChild(item);
+            messageInput.value = '';
+        }
+    </script>
+</body>
+</html>
