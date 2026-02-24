@@ -8,7 +8,7 @@ ALGORITHM = "HS256"
 
 app = FastAPI()
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="http://localhost:8001/login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="http://localhost:8000/login")
 
 logging.basicConfig(
     filename="data.log",
