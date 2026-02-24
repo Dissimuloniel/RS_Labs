@@ -4,3 +4,4 @@ Invoke-WebRequest -Method POST "http://localhost:8000/login?username=admin&passw
 !!Invoke-WebRequest -Uri "http://localhost:8000/login?username=admin&password=password123" -Method POST
 $token = "JWT_TOKEN"
 Invoke-WebRequest ` -Uri "http://localhost:8001/data" ` -Method GET ` -Headers @{ Authorization = "Bearer $token" }
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc3MTkwNDc1NX0.JCAHxZgWY5I49fSR-YJJyPIC77qW9yc9BxLV0Szstv8

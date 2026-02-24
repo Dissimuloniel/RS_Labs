@@ -25,20 +25,28 @@ def verify_token(token: str):
         return None
 
 @app.get("/data")
-def get_secure_data(authorization: str = Header(None)):
+def get_secure_data(authorization: str = Header(None, alias="Authorization")):
+
     logging.info("Access attempt to /data")
+
     if not authorization:
         logging.warning("No token provided")
         raise HTTPException(status_code=401, detail="Token required")
+
     token = authorization.replace("Bearer ", "")
     user = verify_token(token)
+
     if not user:
         logging.warning("Invalid token")
         raise HTTPException(status_code=401, detail="Invalid token")
+
     logging.info(f"Access granted for {user}")
+
     secret_data = f"Very secret data for {user}"
     encrypted = cipher.encrypt(secret_data.encode())
+
     return {
+        "massage": f"Hello, {user}! Here is your encrypted data.",
         "encrypted_data": encrypted.decode(),
         "encryption_key": FERNET_KEY.decode()
     }

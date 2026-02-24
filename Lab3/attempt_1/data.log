@@ -1,2 +1,52 @@
 2026-02-24 01:29:42,799 - Access attempt to /data
 2026-02-24 01:29:42,813 - Access granted for admin
+2026-02-24 05:32:26,839 - Access attempt to /data
+2026-02-24 05:32:26,839 - No token provided
+2026-02-24 05:32:45,779 - Access attempt to /data
+2026-02-24 05:32:45,779 - No token provided
+2026-02-24 05:33:30,212 - Access attempt to /data
+2026-02-24 05:33:30,212 - No token provided
+2026-02-24 05:34:11,351 - Access attempt to /data
+2026-02-24 05:34:11,351 - No token provided
+2026-02-24 05:35:11,438 - Access attempt to /data
+2026-02-24 05:35:11,439 - No token provided
+2026-02-24 05:35:25,247 - Access attempt to /data
+2026-02-24 05:35:25,260 - Invalid token
+2026-02-24 05:36:31,738 - Access attempt to /data
+2026-02-24 05:36:31,739 - Access granted for admin
+2026-02-24 05:58:39,947 - Client requested data
+2026-02-24 05:58:42,028 - Token received from auth service
+2026-02-24 06:04:17,054 - Client requested data
+2026-02-24 06:04:19,110 - Token received from auth service
+2026-02-24 06:05:41,845 - Access attempt to /data
+2026-02-24 06:05:41,869 - Access granted for admin
+2026-02-24 06:05:47,951 - Access attempt to /data
+2026-02-24 06:05:47,951 - No token provided
+2026-02-24 06:05:49,913 - Access attempt to /data
+2026-02-24 06:05:49,913 - No token provided
+2026-02-24 06:05:56,116 - Access attempt to /data
+2026-02-24 06:05:56,116 - No token provided
+2026-02-24 06:05:58,058 - Access attempt to /data
+2026-02-24 06:05:58,059 - No token provided
+2026-02-24 06:08:05,966 - Access attempt to /data
+2026-02-24 06:08:05,966 - Access granted for admin
+2026-02-24 06:08:15,946 - Access attempt to /data
+2026-02-24 06:08:15,946 - No token provided
+2026-02-24 06:09:53,278 - Access attempt to /data
+2026-02-24 06:09:53,278 - No token provided
+2026-02-24 06:09:58,117 - Access attempt to /data
+2026-02-24 06:09:58,118 - No token provided
+2026-02-24 06:09:59,059 - Access attempt to /data
+2026-02-24 06:09:59,060 - No token provided
+2026-02-24 06:10:06,008 - Access attempt to /data
+2026-02-24 06:10:06,008 - No token provided
+2026-02-24 06:10:15,859 - Access attempt to /data
+2026-02-24 06:10:15,859 - No token provided
+2026-02-24 06:10:36,424 - Access attempt to /data
+2026-02-24 06:10:36,424 - No token provided
+2026-02-24 06:10:54,965 - Access attempt to /data
+2026-02-24 06:10:54,966 - No token provided
+2026-02-24 06:13:22,300 - Access attempt to /data
+2026-02-24 06:13:22,300 - No token provided
+2026-02-24 06:13:25,274 - Access attempt to /data
+2026-02-24 06:13:25,275 - No token provided
