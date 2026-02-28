@@ -3,7 +3,7 @@ install `flask` and `requests` via pip
 
 Terminal A: `python3 user_service.py`\
 Terminal B: `python3 order_service.py`\
-Terminal C: `python3 web_app.py` WIP
+Terminal C: `python3 app.py`
 
 # Users service API calls examples
 #### Get all users: 
