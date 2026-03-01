@@ -2,6 +2,8 @@ from fastapi import FastAPI, HTTPException
 from jose import jwt
 from datetime import datetime, timedelta
 import logging
+from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
@@ -12,6 +14,18 @@ TOKEN_EXPIRE_MINUTES = 30
 users_db = {
     "admin": "password123"
 }
+
+class LoginRequest(BaseModel):
+    username: str
+    password: str
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 logging.basicConfig(
     filename="auth.log",
@@ -27,7 +41,9 @@ def create_token(username: str):
     return jwt.encode(payload, SECRET_KEY, algorithm=ALGORITHM)
 
 @app.post("/login")
-def login(username: str, password: str):
+def login(data: LoginRequest):
+    username = data.username
+    password = data.password
     logging.info(f"Login attempt: {username}")
     if users_db.get(username) != password:
         logging.warning(f"FAILED login: {username}")

@@ -2,12 +2,12 @@ from fastapi import FastAPI, Header, HTTPException
 from jose import jwt, JWTError
 from cryptography.fernet import Fernet
 import logging
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
 SECRET_KEY = "SUPER_SECRET_KEY"
 ALGORITHM = "HS256"
-
 FERNET_KEY = Fernet.generate_key()
 cipher = Fernet(FERNET_KEY)
 
@@ -15,6 +15,14 @@ logging.basicConfig(
     filename="data.log",
     level=logging.INFO,
     format="%(asctime)s - %(message)s"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 def verify_token(token: str):
@@ -47,6 +55,7 @@ def get_secure_data(authorization: str = Header(None, alias="Authorization")):
 
     return {
         "massage": f"Hello, {user}! Here is your encrypted data.",
+        "secret_data": secret_data,
         "encrypted_data": encrypted.decode(),
         "encryption_key": FERNET_KEY.decode()
     }
