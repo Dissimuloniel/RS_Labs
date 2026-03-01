@@ -28,3 +28,47 @@
 2026-02-24 14:08:18,202 - SUCCESS login: admin
 2026-02-24 14:09:33,569 - Login attempt: admin
 2026-02-24 14:09:33,570 - SUCCESS login: admin
+2026-03-01 21:15:22,312 - Login attempt: admin
+2026-03-01 21:15:22,341 - SUCCESS login: admin
+2026-03-01 21:24:03,931 - Login attempt: admin
+2026-03-01 21:24:03,945 - SUCCESS login: admin
+2026-03-01 21:24:13,277 - Login attempt: admin
+2026-03-01 21:24:13,278 - FAILED login: admin
+2026-03-01 21:24:21,357 - Login attempt: 
+2026-03-01 21:24:21,357 - FAILED login: 
+2026-03-01 21:24:21,869 - Login attempt: 
+2026-03-01 21:24:21,869 - FAILED login: 
+2026-03-01 21:24:36,816 - Login attempt: 
+2026-03-01 21:24:36,816 - FAILED login: 
+2026-03-01 21:24:37,014 - Login attempt: 
+2026-03-01 21:24:37,014 - FAILED login: 
+2026-03-01 21:25:31,798 - Login attempt: admin
+2026-03-01 21:25:31,798 - SUCCESS login: admin
+2026-03-01 21:29:01,550 - Login attempt: admin
+2026-03-01 21:29:01,551 - SUCCESS login: admin
+2026-03-01 21:31:33,614 - Login attempt: admin
+2026-03-01 21:31:33,615 - SUCCESS login: admin
+2026-03-01 21:32:20,294 - Login attempt: admin
+2026-03-01 21:32:20,295 - SUCCESS login: admin
+2026-03-01 21:32:39,222 - Login attempt: admin
+2026-03-01 21:32:39,233 - SUCCESS login: admin
+2026-03-01 21:33:06,831 - Login attempt: admin
+2026-03-01 21:33:06,831 - SUCCESS login: admin
+2026-03-01 21:33:16,191 - Login attempt: 
+2026-03-01 21:33:16,191 - FAILED login: 
+2026-03-01 21:33:42,042 - Login attempt: admin
+2026-03-01 21:33:42,042 - SUCCESS login: admin
+2026-03-01 21:33:46,154 - Login attempt: admin
+2026-03-01 21:33:46,154 - FAILED login: admin
+2026-03-01 21:36:52,814 - Login attempt: admin
+2026-03-01 21:36:52,825 - SUCCESS login: admin
+2026-03-01 21:37:01,504 - Login attempt: admin
+2026-03-01 21:37:01,504 - SUCCESS login: admin
+2026-03-01 21:41:07,128 - Login attempt: admin
+2026-03-01 21:41:07,128 - FAILED login: admin
+2026-03-01 21:41:18,210 - Login attempt: Pasha
+2026-03-01 21:41:18,210 - FAILED login: Pasha
+2026-03-01 21:41:37,957 - Login attempt: admin
+2026-03-01 21:41:37,957 - FAILED login: admin
+2026-03-01 21:41:43,497 - Login attempt: admin
+2026-03-01 21:41:43,497 - FAILED login: admin
