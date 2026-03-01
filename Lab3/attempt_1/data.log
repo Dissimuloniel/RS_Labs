@@ -154,3 +154,6 @@
 2026-03-01 21:36:54,697 - Access granted for admin
 2026-03-01 21:37:02,324 - Access attempt to /data
 2026-03-01 21:37:02,325 - Access granted for admin
+2026-03-01 21:56:31,161 - Access attempt to /data
+2026-03-01 21:56:31,172 - Access granted for admin
+2026-03-01 21:59:10,989 - Unauthorized access attempt from web page (no token)

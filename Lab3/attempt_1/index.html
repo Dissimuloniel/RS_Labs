@@ -55,6 +55,9 @@ async function login() {
 }
 async function getData() {
     if (!token) {
+        await fetch("http://localhost:8001/log-unauthorized", {
+            method: "POST"
+        });
         alert("Сначала выполните вход!");
         return;
     }

@@ -32,6 +32,11 @@ def verify_token(token: str):
     except JWTError:
         return None
 
+@app.post("/log-unauthorized")
+def log_unauthorized():
+    logging.warning("Unauthorized access attempt from web page (no token)")
+    return {"status": "logged"}
+
 @app.get("/data")
 def get_secure_data(authorization: str = Header(None, alias="Authorization")):
 
